@@ -43,6 +43,10 @@ const App = () => {
               </select>
             </div>
           </div>
+
+          <button type="submit" className="submit-button">Get Exchange Rate</button>
+          
+          <p className="exchange-rate-result">1,000 USD = 83620.80 INR</p>
           </div>
       </form>
     </div>
