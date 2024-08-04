@@ -42,9 +42,18 @@
  .currency-converter .converter-form{
    margin-top: 45px;
  }
+ .converter-form .form-group{
+   display: flex;
+   margin-bottom: 30px;
+   flex-direction: column;
+ }
 
  .converter-form .form-group .form-label{
    color: white;
+   font-weight: 500;
+   display: block;
+   margin-bottom: 9px;
+   font-size: 1rem;
  }
 
  .converter-form .form-group .form-input{
@@ -104,6 +113,7 @@
    border-radius: 50%;
    background: rgba(255, 255, 255, 0.1);
    border: 1px solid rgba(255,255,255,0.5);
+   transition: 0.2s ease-in;
 }
 
 .form-currency-group .swap-icon:hover {
@@ -119,6 +129,13 @@
    font-size: 1rem;
    font-weight: 600;
    cursor: pointer;
+   margin-top: 5px;
+   transition: 0.2s ease-in;
+}
+
+.converter-form.submit-button.loading{
+   opacity: 0.7;
+   pointer-events: none;
 }
 .converter-form .submit-button:hover {
    background-color: rgba(255,255,255,0.8);
@@ -134,4 +151,13 @@
    border-radius: 6px;
    letter-spacing: 0.5px;
    background: rgba(255, 255, 255, 0.15);
+}
+
+@media(max-width: 640px) {
+   body{
+      padding: 0 10px;
+   }
+   .currency-converter{
+      padding: 30px 20px 40px;
+   }
 }
