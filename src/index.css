@@ -13,7 +13,8 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #030728;
+    background: url("bg.png") #030728;
+
  }
 
  #root{
@@ -156,6 +157,7 @@
 @media(max-width: 640px) {
    body{
       padding: 0 10px;
+      
    }
    .currency-converter{
       padding: 30px 20px 40px;
